@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    color: white;
+    background-image:  url(https://preview.redd.it/i-made-a-gradient-wallpaper-pack-and-this-is-one-of-the-v0-jlpv3gf20c291.png?width=1080&crop=smart&auto=webp&s=5d1cafcf4d29b9d452f3bf974fef71d8aabfbe8f);
+    background-size: cover;
+    background-position: center; 
+    background-attachment: fixed;
+} 
+
+.hero h1 {
+    font-size: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-transform: uppercase;
+    
+}

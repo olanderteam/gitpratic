@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Events</title>
+</head>
+<body>
+<button id="btn">Click Me</button>
+<!-- <p id="hoverText">Hover over me</p>
+<input type="text" id="textInput" placeholder="Type something..." /> 
+<p id="displayText"></p> -->
+
+<!-- <select id="dropdown">
+    <option value="">Please Select</option>
+    <option value="apple">Apple</option>
+    <option value="banana">Banana</option>
+    <option value="blueberry">blueberry</option>
+</select> -->
+<script> 
+function handClick() {
+    console.log("handle click");
+    btn.removeEventListener("click", handleClick);
+
+}
+
+btn.addEventListener("click", handleClick);
+// 
+    // const input = document.getElementById("textInput");
+    // const display = document.getElementById("displayText");
+
+    // input.addEventListener("keyup", function (event) {
+    //     display.textContent = "You Typed " + event.target.value;
+    // });
+    // function sayHello() {
+    //     alert("Hello Javascript");
+    // }
+    // const button = document.getElementById("btn"); 
+    // button.addEventListener("click", sayHello);
+    // button.addEventListener("click", () => {
+    //     alert("HELLO GABE");
+    // });
+
+    // const text = document.getElementById("hoverText");
+
+    // text.style.color = "black";
+
+    // text.addEventListener("mouseover", function () {
+    //     text.style.color = "red";
+    // });
+
+    // text.addEventListener("mouseout", function () {
+    //     text.style.color = "black";
+    // });
+</script>
+</body>
+</html>

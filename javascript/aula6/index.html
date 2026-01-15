@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+    <style>
+        .highlight {
+            background-color: yellow;
+            color: black   
+            font-weight: bold; 
+
+        }
+    </style>
+  
+</head>
+<body>
+    <h1 id="main-heading">welcome</h1>
+    <p class="description">this is paragraph1</p>
+    <p class="description">this is paragraph2</p>
+    <p class="description">this is paragraph3</p>
+    <button onclick="changeText()">Click me</button>
+<script>
+//  document.addEventListener('DOMContentLoaded', () => {
+//     const heading = document.getElementById('main-heading');
+
+//     function changeText() {
+//         heading.textContent = 'DOM Manipulation is Awesome';
+//     }
+
+//     // Expor a função para o escopo global para que o atributo onclick do botão a chame
+//     window.changeText = changeText;
+
+//     // Logar todos os parágrafos com a classe .description
+//     const allParagraphs = document.querySelectorAll('.description');
+//     allParagraphs.forEach(para => console.log(para.textContent));
+
+    // Exemplos de manipulação do heading (comentados por padrão)
+    // heading.textContent = 'NEW HEADING';
+    // heading.innerHTML = "<span style='color: red'>styled</span> heading";
+    // heading.style.color = 'blue';
+    // heading.style.fontSize = '24px';
+    // heading.style.textAlign = 'center';
+
+    // Criar e anexar um novo parágrafo e remover ao clicar no botão
+//     const newParagraph = document.createElement('p');
+//     newParagraph.textContent = 'this is a new paragraph';
+//     document.body.appendChild(newParagraph);
+
+//     const button = document.querySelector('button');
+//     if (button) {
+//         button.addEventListener('click', () => {
+//             if (newParagraph.parentNode) document.body.removeChild(newParagraph);
+//         });
+//     }
+// });
+
+// const heading = document.getElementsById("main-heading");
+// heading.classList.add("highlight"); 
+
+const link = document.createElement("a")
+link.setAttribute("href", "https://google.com")
+link.textContent = "VISIT website";
+document.body.appendChild(link);
+</script>
+    
+</body>
+</html>

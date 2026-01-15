@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">   
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Position</title> 
+        <style>
+            .static {
+
+                position: static;
+            } 
+
+            .relative {
+                position: relative;
+                top: 20px;
+                left: 30px;
+            } 
+
+
+            .parent {
+                position: relative;
+                width: 300px;
+                height: 1000px;
+                background-color: lightgray;
+            
+            } 
+
+            .absolute {
+                position: absolute;
+                top: 50px;
+                left: 100px;
+                background-color: coral;
+            }
+
+            .fixed {
+                position: fixed;
+                top: 0;
+                background-color: lightgreen;
+                padding: 10px;
+                z-index: 10000;
+            }
+
+            .box {
+                position: absolute;
+                width: 100px;
+                height: 100px;
+            
+            }
+            .one {
+                background-color: red;
+                z-index: 1;
+            } 
+
+            .two {
+                background-color: blue;
+                z-index: 2;
+                top: 20px;
+                left: 20px;
+            }
+        </style>
+    </head>
+
+    <body>
+       <!-- <p class="static">I am static</p>
+        <div class="relative">I am relative</div>
+
+        <div class="parent">Parent</div>
+        <div class="absolute">Absolute</div>
+        <header class="fixed">I am fixed</header> -->
+        <div class="box one">Box 1</div>
+         <div class="box two">Box 2</div>
+    </body> 
+    </html>
