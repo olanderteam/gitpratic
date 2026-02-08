@@ -23,8 +23,10 @@ if (savedTheme === "dark") {
     body.classList.add("dark");
 }
 
-toggleThemeBtn.addEventListener("click", () => {
-  body.classList.toggle("dark");
-  let currentTheme = body.classList.contains("dark") ? "dark" : "light";
-  localStorage.setItem("theme", currentTheme);
-});
+if (toggleThemeBtn) {
+    toggleThemeBtn.addEventListener("click", () => {
+        body.classList.toggle("dark");
+        let currentTheme = body.classList.contains("dark") ? "dark" : "light";
+        localStorage.setItem("theme", currentTheme);
+    });
+}
